@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------- CLASSI GENERICHE -------- */
+body{
+	background-color: #bbbbba;
+	background-image:url(../images/pattern_sfondo.jpg);
+	background-position:left top;
+	background-repeat:repeat-x;
+	margin-top:0;
+}
+a{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#31639A;
+}
+a:hover{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#0A7EFC;
+}
+td{
+	text-align:left;
+	vertical-align:top;
+}
+
+/* -------- CLASSI DI TD E TABELLE -------- */
+.main{
+	width: 940px;
+	margin-top:0;
+}
+
+/* MENU */
+.menu_table{
+	background-image:url(../images/menu_sfondo.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+.menu{
+	height:20px;
+	width:93px;
+	text-align:center;
+	vertical-align:middle;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menu a{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+#td_spacer{
+	background-color:#FFFFFF;
+}
+
+/* CORPO CENTRALE */
+.td_content{
+	height:480px;
+	border-left:1px solid #ababab;
+	border-right:1px solid #ababab;
+	background-color:#F7F8F9;
+}
+
+/* VISUALIZZAZIONE TABELLE RECORDS */
+.table_records{
+	border:1px solid #000033;
+}
+.td_table_title{
+	background-color:#31639a;
+	text-align:left;
+	line-height:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#ffffff;
+	font-weight:bold;
+}
+.td_record_table1{
+	background-color:#d4d8e8;
+	text-align:left;
+	line-height:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000033;
+	vertical-align:top;
+}
+.td_record_table1_img{
+	background-color:#d4d8e8;
+	text-align:center;
+	vertical-align:middle;
+}
+.td_record_table2{
+	background-color:#b5c8d6;
+	text-align:left;
+	line-height:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000033;
+	vertical-align:top;
+}
+.td_record_table2_img{
+	background-color:#b5c8d6;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* -------- MODULO -------- */
+.button{
+	border: 1px solid #31639A;
+	background-image:url(../images/pattern_button.gif);
+	background-repeat:repeat-x;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000033;
+	height:22px;
+}
+.input_text{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 300px;
+}
+.input_text_medium{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 150px;
+}
+.input_text_small{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 80px;
+}
+.select{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 307px;
+}
+.select_text_small{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	color:#000000;
+	width: 360px;
+}
+.select_month{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 95px;
+}
+.select_year{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 60px;
+}
+.text_area{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	width: 301px;
+	height: 80px;
+}
+.checkbox{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+
+/* -------- CLASSI DI TESTO E LINKS -------- */
+.text_13_blu{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#00005e;
+}
+.text_12_black{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+.text_12_red{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FF0000;
+}
+.text_14_red{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FF0000;
+}
+.text_14_green{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#00FF00;
+}
+/*
+.testo_10_azzurro{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#67879e;
+}
+.testo_10_bianco{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#ffffff;
+}
+.testo_10_blu{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000033;
+}
+.link_10_arancio{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-decoration:underline;
+	color:#e26014;
+}
+.link_10_arancio:hover{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-decoration:underline;
+	color:#8bacc3;
+}
+*/
