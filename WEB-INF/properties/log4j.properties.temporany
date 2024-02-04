@@ -1,0 +1,22 @@
+#Temporani log4j.properties
+#Thu Nov 30 16:08:31 CET 2023
+log4j.appender.E=org.apache.log4j.RollingFileAppender
+log4j.appender.D=org.apache.log4j.RollingFileAppender
+log4j.appender.D.layout.ConversionPattern=%5p %d{yyyy-MM-dd hh\:mm\:ss } (%F\:%L) - %m%n
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.E.layout.ConversionPattern=%5p %d{yyyy-MM-dd hh\:mm\:ss } (%F\:%L) - %m%n
+D.File=/WEB-INF/logs/log-debug.txt
+log4j.appender.E.MaxBackupIndex=1
+log4j.appender.stdout.layout.ConversionPattern=%5p CLIPPING_DB - (%F\:%L)- %m%n
+E.File=/WEB-INF/logs/log-error.txt
+log4j.appender.D.MaxFileSize=10000KB
+log4j.appender.E.layout=org.apache.log4j.PatternLayout
+log4j.appender.E.MaxFileSize=10000KB
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.D.File=D\:\\tomcat6\\webapps\\clipping_db\\/WEB-INF/logs/log-debug.txt
+log4j.appender.D.layout=org.apache.log4j.PatternLayout
+log4j.appender.D.MaxBackupIndex=1
+log4j.appender.E.Threshold=WARN
+log4j.rootLogger=error,D,E,stdout
+log4j.appender.E.File=D\:\\tomcat6\\webapps\\clipping_db\\/WEB-INF/logs/log-error.txt
+name=E, D

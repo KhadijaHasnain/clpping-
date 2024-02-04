@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+	<servlet>
+		<servlet-name>initial</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.Initial</servlet-class>
+		<init-param>
+			<param-name>clipping_ds_name</param-name>
+			<param-value>clipping_db</param-value>
+		</init-param>
+		<init-param>
+			<param-name>error_label_file</param-name>
+			<param-value>WEB-INF/properties/ErrorMessage.properties</param-value>
+		</init-param>
+		<init-param>
+			<param-name>query_file</param-name>
+			<param-value>WEB-INF/properties/Query.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>log4j-init</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.Log4jInitServlet</servlet-class>
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>WEB-INF/properties/log4j.properties</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.LoginServlet</servlet-class>
+	</servlet>
+        <servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login.do</url-pattern>
+	</servlet-mapping>
+        
+        <servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManagePublicationServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManagePublicationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagePublicationServlet</servlet-name>
+		<url-pattern>/managePublication.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageClippingServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageClippingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageClippingServlet</servlet-name>
+		<url-pattern>/manageClipping.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageContactServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageContactServlet</servlet-name>
+		<url-pattern>/manageContact.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageEventServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageEventServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageEventServlet</servlet-name>
+		<url-pattern>/manageEvent.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ManageProductServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageProductServlet</servlet-name>
+		<url-pattern>/manageProduct.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageDivisionServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageDivisionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageDivisionServlet</servlet-name>
+		<url-pattern>/manageDivision.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageCountryServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageCountryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageCountryServlet</servlet-name>
+		<url-pattern>/manageCountry.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ManageUserServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ManageUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageUserServlet</servlet-name>
+		<url-pattern>/manageUser.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReportTextServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportTextServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportTextServlet</servlet-name>
+		<url-pattern>/reportText.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReportNewTextMonthlyServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportNewTextMonthlyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportNewTextMonthlyServlet</servlet-name>
+		<url-pattern>/reportNewTextMonthly.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReportNewTextQuarterlyServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportNewTextQuarterlyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportNewTextQuarterlyServlet</servlet-name>
+		<url-pattern>/reportNewTextQuarterly.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReportNewTextYearly.do</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportNewTextYearlyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportNewTextYearly.do</servlet-name>
+		<url-pattern>/reportNewTextYearly.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReportImportantTitlesServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportImportantTitlesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportImportantTitlesServlet</servlet-name>
+		<url-pattern>/reportImportantTitles.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReportGraphicServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportGraphicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportGraphicServlet</servlet-name>
+		<url-pattern>/graphicReport.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ReportTrendServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.ReportTrendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReportTrendServlet</servlet-name>
+		<url-pattern>/trendReport.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HorizontalBarChartServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.graphic.HorizontalBarChartServlet</servlet-class>
+	</servlet>    
+	<servlet-mapping>
+		<servlet-name>HorizontalBarChartServlet</servlet-name>
+		<url-pattern>/HorizontalBarChart.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VerticalBarChartServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.graphic.VerticalBarChartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerticalBarChartServlet</servlet-name>
+		<url-pattern>/VerticalBarChart.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>StackedVerticalBarChartServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.graphic.StackedVerticalBarChartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StackedVerticalBarChartServlet</servlet-name>
+		<url-pattern>/StackedVerticalBarChart.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LineChartServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.graphic.LineChartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LineChartServlet</servlet-name>
+		<url-pattern>/LineChart.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LineChartTrendServlet</servlet-name>
+		<servlet-class>it.vidiemme.clipping.servlets.graphic.LineChartTrendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LineChartTrendServlet</servlet-name>
+		<url-pattern>/LineChartTrend.do</url-pattern>
+	</servlet-mapping>
+	
+        <session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
